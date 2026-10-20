@@ -4,6 +4,8 @@ Os cenários abaixo são planejados. Ainda não há defeitos executáveis, branc
 
 ## USR-001 — Preferências ausentes
 
+**Prioridade na apresentação:** Complementar — fora da implementação obrigatória e da agenda de 50 minutos.
+
 **Preparação:** executar a revisão correspondente a `demo/usr-001` com as fixtures sintéticas e as demais dependências em versões saudáveis.
 
 **Reprodução:** `GET /users/customer-pickup/preferences`
@@ -18,6 +20,8 @@ Os cenários abaixo são planejados. Ainda não há defeitos executáveis, branc
 
 
 ## USR-002 — Cliente inexistente
+
+**Prioridade na apresentação:** Complementar — fora da implementação obrigatória e da agenda de 50 minutos.
 
 **Preparação:** executar a revisão correspondente a `demo/usr-002` com as fixtures sintéticas e as demais dependências em versões saudáveis.
 

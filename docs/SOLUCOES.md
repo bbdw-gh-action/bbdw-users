@@ -4,6 +4,8 @@ Material público para revisão e comparação. O agente pode consultá-lo, e es
 
 ## USR-001 — Preferências ausentes
 
+**Prioridade na apresentação:** Complementar — fora da implementação obrigatória e da agenda de 50 minutos.
+
 **Causa planejada:** O serviço acessa preferences.emailNotifications quando preferences é null.
 
 **Correção de referência:** Aplicar os padrões documentados quando o objeto de preferências estiver ausente, preservando valores explícitos existentes.
@@ -18,6 +20,8 @@ Material público para revisão e comparação. O agente pode consultá-lo, e es
 
 
 ## USR-002 — Cliente inexistente
+
+**Prioridade na apresentação:** Complementar — fora da implementação obrigatória e da agenda de 50 minutos.
 
 **Causa planejada:** O mapeador acessa name no resultado undefined de uma busca sem correspondência.
 

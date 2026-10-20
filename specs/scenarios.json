@@ -14,7 +14,9 @@
         "Cliente sem preferências recebe ambos os valores false.",
         "Cliente com emailNotifications=true preserva true.",
         "Cliente inexistente continua retornando 404."
-      ]
+      ],
+      "presentationRole": "complementar",
+      "requiredForPresentation": false
     },
     {
       "id": "USR-002",
@@ -28,7 +30,18 @@
         "ID inexistente retorna 404 e o envelope de erro.",
         "ID existente retorna perfil completo.",
         "O caminho normal de 404 não gera evento de erro inesperado no Sentry."
-      ]
+      ],
+      "presentationRole": "complementar",
+      "requiredForPresentation": false
     }
-  ]
+  ],
+  "presentation": {
+    "durationMinutes": 50,
+    "primaryScenario": "CHK-001",
+    "backupScenario": "CAT-001",
+    "startWithFaultyApplication": true,
+    "workflowStartTargetMinute": 5,
+    "resultsTargetMinute": 30,
+    "requiredRepairRepository": "bbw-checkout"
+  }
 }
