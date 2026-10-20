@@ -1,0 +1,21 @@
+[
+  {
+    "id": "customer-pickup",
+    "name": "Cliente Retirada",
+    "address": null,
+    "preferences": null
+  },
+  {
+    "id": "customer-delivery",
+    "name": "Cliente Entrega",
+    "address": {
+      "postalCode": "00000000",
+      "street": "Rua Fictícia",
+      "city": "Cidade Demo"
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false
+    }
+  }
+]
