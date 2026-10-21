@@ -8,6 +8,8 @@ import {
 import { randomUUID } from "node:crypto";
 import type { Request, Response, NextFunction } from "express";
 
+import { captureServerError } from "./telemetry";
+
 export class ApiError extends HttpException {
   constructor(status: number, code: string, message: string) {
     super({ code, message }, status);
@@ -24,6 +26,8 @@ class ApiExceptionFilter implements ExceptionFilter {
       typeof detail === "object" && detail !== null
         ? (detail as Record<string, unknown>)
         : {};
+    if (status >= 500)
+      captureServerError(error, String(response.getHeader("X-Request-ID")));
     response.status(status).json({
       error: {
         code:

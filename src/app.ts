@@ -10,6 +10,7 @@ import {
 import { NestFactory } from "@nestjs/core";
 import fixtures from "../specs/fixtures.json";
 import { ApiError, configureHttp } from "./http";
+import { TelemetryShutdown } from "./telemetry";
 
 @Injectable()
 export class UsersService {
@@ -34,7 +35,7 @@ class UsersController {
   }
 }
 
-@Module({ controllers: [UsersController], providers: [UsersService] })
+@Module({ controllers: [UsersController], providers: [UsersService, TelemetryShutdown] })
 class AppModule {}
 
 export async function createApp() {

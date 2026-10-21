@@ -6,7 +6,7 @@ Fornecer perfis fictícios, endereços opcionais e preferências de clientes.
 
 **Tecnologia prevista:** NestJS e TypeScript.
 
-**Estado atual:** aplicação funcional e saudável, com testes, Dockerfile e CI próprio. O checkout contém CHK-001 isolado, instrumentação Sentry e workflow Codex. A conexão Sentry e o ensaio real até o PR estão pendentes; o deploy remoto será definido depois.
+**Estado atual:** aplicação funcional e saudável, com testes, Dockerfile e CI próprio. O checkout contém CHK-001 isolado, instrumentação Sentry e workflow Codex. A conexão Sentry e a captura neste serviço foram validadas; o ensaio real até o PR continua pendente; o deploy remoto será definido depois.
 
 ## Escopo da apresentação de 50 minutos
 
@@ -63,3 +63,7 @@ Cada repositório terá seu próprio CI/CD. O workflow de reparo obrigatório ne
 - [bbw-catalog](https://github.com/bbdw-gh-action/bbw-catalog)
 - [bbw-checkout](https://github.com/bbdw-gh-action/bbw-checkout)
 - [bbw-storefront](https://github.com/bbdw-gh-action/bbw-storefront)
+
+## Monitoramento Sentry
+
+SDK configurado no projeto próprio `bbw-users`, com captura real validada. Consulte [configuração e evidências](docs/SENTRY.md). A criação automática de issues e o reparo por agente continuam no escopo principal do checkout.
