@@ -4,6 +4,6 @@ const require = createRequire(import.meta.url);
 for (const key of ["SENTRY_AUTH_TOKEN", "SENTRY_ORG", "SENTRY_PROJECT", "SENTRY_RELEASE"]) {
   if (!process.env[key]) throw new Error(`Configure ${key} antes do upload.`);
 }
-if (process.env.SENTRY_PROJECT !== "bbw-users") throw new Error("Use o projeto dedicado bbw-users.");
+if (process.env.SENTRY_PROJECT !== "bbdw-users") throw new Error("Use o projeto dedicado bbdw-users.");
 const cli = require("@sentry/cli").SentryCli.getPath();
 execFileSync(cli, ["sourcemaps", "upload", "dist/src", "--release", process.env.SENTRY_RELEASE, "--url-prefix", "app:///src", "--validate", "--strict"], { stdio: "inherit" });

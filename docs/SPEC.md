@@ -1,4 +1,4 @@
-# Especificação de bbw-users
+# Especificação de bbdw-users
 
 ## Escopo da apresentação de 50 minutos
 
@@ -12,7 +12,7 @@ Manter quatro aplicações pequenas, dados fictícios em memória, HTTP/JSON e C
 
 **Papel deste repositório:** Dependência saudável: servir os dois clientes fictícios e seus endereços por GET /users/:id. Preferências e falhas próprias ficam como material complementar.
 
-[Roteiro completo e contingência](https://github.com/bbdw-gh-action/bbw-storefront/blob/main/docs/ROTEIRO.md).
+[Roteiro completo e contingência](https://github.com/bbdw-gh-action/bbdw-storefront/blob/main/docs/ROTEIRO.md).
 
 ## Objetivo e responsabilidade
 

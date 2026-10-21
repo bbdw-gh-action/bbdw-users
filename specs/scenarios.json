@@ -1,5 +1,5 @@
 {
-  "service": "bbw-users",
+  "service": "bbdw-users",
   "status": "specified-not-implemented",
   "scenarios": [
     {
@@ -42,6 +42,6 @@
     "startWithFaultyApplication": true,
     "workflowStartTargetMinute": 5,
     "resultsTargetMinute": 30,
-    "requiredRepairRepository": "bbw-checkout"
+    "requiredRepairRepository": "bbdw-checkout"
   }
 }

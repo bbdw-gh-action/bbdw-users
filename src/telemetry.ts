@@ -16,7 +16,7 @@ export function initTelemetry() {
       delete event.user;
       delete event.breadcrumbs;
       delete event.extra;
-      event.server_name = "bbw-users";
+      event.server_name = "bbdw-users";
       for (const exception of event.exception?.values ?? []) {
         for (const frame of exception.stacktrace?.frames ?? []) {
           const filename = frame.filename?.replaceAll("\\", "/");
@@ -36,7 +36,7 @@ export function initTelemetry() {
 export function captureServerError(error: unknown, requestId: string) {
   if (!Sentry.isEnabled()) return;
   Sentry.withScope((scope) => {
-    scope.setTag("service", "bbw-users");
+    scope.setTag("service", "bbdw-users");
     scope.setTag("scenario", process.env.DEMO_SCENARIO || "none");
     scope.setTag("request_id", requestId);
     scope.setTag("demo_run", process.env.DEMO_RUN_ID || "local");

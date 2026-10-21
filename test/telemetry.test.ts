@@ -57,7 +57,7 @@ test("HTTP 500 envia um evento por requisição, isolado e sem dados do cliente"
       assert.equal(event.release, "test-release");
       assert.equal(event.environment, "test");
       assert.equal(event.tags.scenario, "SDK-SMOKE");
-      assert.equal(event.tags.service, "bbw-users");
+      assert.equal(event.tags.service, "bbdw-users");
       assert.equal(event.request, undefined);
       assert.equal(event.user, undefined);
       assert.ok(event.exception.values[0].stacktrace.frames.length > 0);
