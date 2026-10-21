@@ -1,0 +1,14 @@
+{
+  "repository": "bbdw-gh-action/bbdw-users",
+  "baseBranch": "main",
+  "runtime": "node",
+  "sentry": {
+    "org": "bbdw-workshop-jj",
+    "project": "bbdw-users",
+    "projectId": "4512294855901184"
+  },
+  "sourceFiles": [
+    "src/app.ts"
+  ],
+  "testPattern": "^test/patchwork-[a-z0-9-]+\\.test\\.ts$"
+}
