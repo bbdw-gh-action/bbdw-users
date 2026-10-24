@@ -1,5 +1,5 @@
 {
-  "repository": "bbdw-gh-action/bbdw-users",
+  "repository": "bb-dw-26/bbdw-users",
   "baseBranch": "main",
   "runtime": "node",
   "sentry": {
